@@ -1,0 +1,11 @@
+.navbar {
+    background-color: rgb(139,0,178);
+    border-bottom:0.2rem solid #f05656;
+
+    a.dropdown-toggle.nav-link {
+        color: #fff;
+    }
+    .dropdown-toggle.nav-link:hover {
+        color: #212529
+    }
+}
