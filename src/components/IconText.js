@@ -9,9 +9,9 @@ const IconText = ({
   children,
   className = "",
 }) => (
-  <Row>
-    <Col xs={2} className="d-flex justify-content-center">
-      <FontAwesomeIcon icon={icon} size={size} color={color} />
+  <Row className={`d-flex align-items-center ${className}`}>
+    <Col xs={size} className="d-flex justify-content-center">
+      <FontAwesomeIcon icon={icon} size={`${size}x`} color={color} />
     </Col>
     <Col xs={10} className={className}>
       {children}

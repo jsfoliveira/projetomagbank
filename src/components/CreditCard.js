@@ -1,11 +1,11 @@
 import React from "react";
 import { Container, Row, Col, Image } from "react-bootstrap";
 import {
-  FaCreditCard,
-  FaMobile,
-  FaShoppingCart,
-  FaWallet,
-} from "react-icons/fa";
+  faCreditCard,
+  faMobile,
+  faShoppingCart,
+  faWallet,
+} from "@fortawesome/free-solid-svg-icons";
 import IconText from "./IconText";
 import creditCard from "../assets/credit-card.jpg";
 import "./CreditCard.scss";
@@ -29,34 +29,34 @@ const CreditCard = () => (
             </IconText>
           </Col>
           <Col xs={12} lg={6} className="mb-4">
-            <Row>
-              <Col xs={2} className="d-flex justify-content-center">
-                <FaMobile size="2x" color="#f05656" />
-              </Col>
-              <Col xs={10} className="h5 text-muted">
-                APP
-              </Col>
-            </Row>
+            <IconText
+              icon={faMobile}
+              size={2}
+              color="#f05656"
+              textClassName="h5 text-muted"
+            >
+              APP
+            </IconText>
           </Col>
           <Col xs={12} lg={6} className="mb-4">
-            <Row>
-              <Col xs={2} className="d-flex justify-content-center">
-                <FaShoppingCart size="2x" color="#f05656" />
-              </Col>
-              <Col xs={10} className="h5 text-muted">
-                Pagamento Online
-              </Col>
-            </Row>
+            <IconText
+              icon={faShoppingCart}
+              size={2}
+              color="#f05656"
+              textClassName="h5 text-muted"
+            >
+              Pagamento Online
+            </IconText>
           </Col>
           <Col xs={12} lg={6} className="mb-4">
-            <Row>
-              <Col xs={2} className="d-flex justify-content-center">
-                <FaWallet size="2x" color="#f05656" />
-              </Col>
-              <Col xs={10} className="h5 text-muted">
-                Carteira Digital
-              </Col>
-            </Row>
+            <IconText
+              icon={faWallet}
+              size={2}
+              color="#f05656"
+              textClassName="h5 text-muted"
+            >
+              Carteira Digital
+            </IconText>
           </Col>
         </Row>
       </Col>
